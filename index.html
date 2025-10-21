@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategi Transformasi Digital Kabupaten Kupang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px; /* Adjust based on header height */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-color: #f0f4f8;
+            background-image: linear-gradient(135deg, #e3f2fd 0%, #f0f4f8 100%);
+        }
+        .section-title {
+            @apply text-3xl font-bold text-gray-800 text-center mb-2;
+        }
+        .section-subtitle {
+            @apply text-lg text-gray-500 text-center mb-12;
+        }
+        .card {
+            @apply bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300;
+        }
+        .icon-box {
+            @apply w-16 h-16 rounded-full flex items-center justify-center mb-4;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-3">
+                 <img src="LOGO_KABKUPANG.png" alt="Logo Kabupaten Kupang" class="h-10 w-10">
+                <h1 class="text-xl font-bold text-gray-800">Diskominfo Kab. Kupang</h1>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="#visi-emas" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Visi EMAS</a>
+                <a href="#tantangan" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Tantangan</a>
+                <a href="#target" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Target</a>
+                <a href="#program" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Program</a>
+                <a href="#dampak" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Dampak</a>
+                <div class="flex items-center space-x-2 pl-4">
+                    <a href="MAKALAH SELTER KEPALA DINAS KOMUNIKASI DAN INFORMATIKA - DELSI A. PANIE.pdf" target="_blank" rel="noopener noreferrer" class="bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-yellow-700 transition-colors font-medium text-sm flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                        <span>Artikel</span>
+                    </a>
+                    <a href="PPT - Strategi Transformasi Digital Kabupaten Kupang EMAS.pdf" target="_blank" rel="noopener noreferrer" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors font-medium text-sm flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V7a2 2 0 012-2h10a2 2 0 012 2v10a2 2 0 01-2 2z" /></svg>
+                        <span>Presentasi</span>
+                    </a>
+                    <a href="BEDAH_STRATEGI__Peta_Jalan_Transformasi_Digital_Kabupaten_Kupan.mp3" target="_blank" rel="noopener noreferrer" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors font-medium text-sm flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.636 5.636a9 9 0 0112.728 0M18.364 18.364A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" /></svg>
+                        <span>Audio</span>
+                    </a>
+                    <a href="Cetak_Biru_Digital_Kupang_EMAS.mp4" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium text-sm flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+                        <span>Video</span>
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <a href="#visi-emas" class="block py-3 px-6 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors">Visi EMAS</a>
+            <a href="#tantangan" class="block py-3 px-6 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors">Tantangan</a>
+            <a href="#target" class="block py-3 px-6 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors">Target</a>
+            <a href="#program" class="block py-3 px-6 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors">Program</a>
+            <a href="#dampak" class="block py-3 px-6 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors">Dampak</a>
+            <div class="px-6 py-4 space-y-3 border-t">
+                <a href="MAKALAH SELTER KEPALA DINAS KOMUNIKASI DAN INFORMATIKA - DELSI A. PANIE.pdf" target="_blank" rel="noopener noreferrer" class="block text-center w-full bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-yellow-700 transition-colors font-medium">
+                    Artikel Makalah
+                </a>
+                <a href="PPT - Strategi Transformasi Digital Kabupaten Kupang EMAS.pdf" target="_blank" rel="noopener noreferrer" class="block text-center w-full bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors font-medium">
+                    Presentasi Makalah
+                </a>
+                <a href="BEDAH_STRATEGI__Peta_Jalan_Transformasi_Digital_Kabupaten_Kupan.m4a" target="_blank" rel="noopener noreferrer" class="block text-center w-full bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors font-medium">
+                    Audio Makalah
+                </a>
+                <a href="Cetak_Biru_Digital_Kupang_EMAS.mp4" target="_blank" rel="noopener noreferrer" class="block text-center w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium">
+                    Video Makalah
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg py-20 px-6">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">Strategi Transformasi Digital Kabupaten Kupang</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">Mewujudkan Pemerintahan yang Adaptif dan Masyarakat Sejahtera Menuju Visi Kabupaten Kupang EMAS</p>
+                <div class="bg-white rounded-lg p-4 max-w-md mx-auto shadow-md">
+                    <p class="font-semibold text-gray-700">Disusun oleh:</p>
+                    <p class="text-blue-700 font-bold text-lg">Delsi A. Panie, S.Kom., MM</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visi EMAS Section -->
+        <section id="visi-emas" class="py-20 px-6 fade-in">
+            <div class="container mx-auto">
+                <h3 class="section-title">Visi Kabupaten Kupang EMAS</h3>
+                <p class="section-subtitle">Fondasi utama pembangunan daerah yang Unggul, Mandiri, Adaptif, dan Sejahtera.</p>
+                <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="font-bold text-xl text-blue-600">Unggul</h4>
+                        <p class="text-gray-500 mt-2">SDM kompetitif dan berdaya saing tinggi.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="font-bold text-xl text-green-600">Mandiri</h4>
+                        <p class="text-gray-500 mt-2">Ekonomi lokal yang kuat dan tidak bergantung.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="font-bold text-xl text-yellow-600">Adaptif</h4>
+                        <p class="text-gray-500 mt-2">Pemerintahan responsif terhadap perubahan.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="font-bold text-xl text-purple-600">Sejahtera</h4>
+                        <p class="text-gray-500 mt-2">Peningkatan kualitas hidup seluruh masyarakat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tantangan Section -->
+        <section id="tantangan" class="bg-white py-20 px-6 fade-in">
+            <div class="container mx-auto">
+                <h3 class="section-title">Tantangan Utama yang Dihadapi</h3>
+                <p class="section-subtitle">Tiga isu strategis yang menjadi fokus percepatan transformasi digital.</p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Card 1: Infrastruktur -->
+                    <div class="card text-center">
+                        <div class="icon-box bg-red-100 text-red-600 mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.128 19.825A1.5 1.5 0 0110 18h4a1.5 1.5 0 011.872 1.825l-.01.012a3 3 0 01-2.36 2.163V22a1 1 0 11-2 0v-.001a3 3 0 01-2.36-2.162l-.01-.012zM12 12a3 3 0 100-6 3 3 0 000 6z" /></svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2 text-gray-800">Kesenjangan Infrastruktur</h4>
+                        <p class="text-gray-600">Keterbatasan bandwidth dan koneksi internet yang belum merata menghambat akses digital bagi masyarakat.</p>
+                    </div>
+                    <!-- Card 2: SDM -->
+                    <div class="card text-center">
+                        <div class="icon-box bg-blue-100 text-blue-600 mx-auto">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2 text-gray-800">Keterbatasan Kapasitas SDM</h4>
+                        <p class="text-gray-600">Rendahnya literasi digital masyarakat menjadi penghalang utama dalam adopsi teknologi dan layanan digital.</p>
+                    </div>
+                    <!-- Card 3: Sistem -->
+                    <div class="card text-center">
+                        <div class="icon-box bg-green-100 text-green-600 mx-auto">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2 text-gray-800">Sistem Pemerintahan Silo</h4>
+                        <p class="text-gray-600">Aplikasi yang tumpang tindih dan tidak terintegrasi antar OPD menyebabkan inefisiensi birokrasi dan pemborosan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Target Strategis Section -->
+        <section id="target" class="py-20 px-6 bg-gray-50 fade-in">
+            <div class="container mx-auto">
+                <h3 class="section-title">Tiga Target Strategis Utama (2025-2029)</h3>
+                <p class="section-subtitle">Fokus terukur untuk mengakselerasi pencapaian Visi Kupang EMAS.</p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Target 1 -->
+                    <div class="card">
+                        <div class="flex items-center mb-4">
+                            <div class="icon-box bg-blue-100 text-blue-600 !w-12 !h-12 !mb-0 mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-800">Digitalisasi Layanan Publik</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">Mewujudkan tata kelola pemerintahan yang transparan dan efisien.</p>
+                        <div class="bg-blue-50 text-blue-800 font-bold p-3 rounded-lg text-center">90% layanan dapat diakses digital pada 2028</div>
+                    </div>
+                    <!-- Target 2 -->
+                    <div class="card">
+                        <div class="flex items-center mb-4">
+                            <div class="icon-box bg-red-100 text-red-600 !w-12 !h-12 !mb-0 mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" /></svg>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-800">Penurunan Hoaks</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">Menciptakan ekosistem informasi yang sehat dan masyarakat yang kritis.</p>
+                        <div class="bg-red-50 text-red-800 font-bold p-3 rounded-lg text-center">40% penurunan penyebaran hoaks per tahun</div>
+                    </div>
+                    <!-- Target 3 -->
+                    <div class="card">
+                        <div class="flex items-center mb-4">
+                            <div class="icon-box bg-green-100 text-green-600 !w-12 !h-12 !mb-0 mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 14l9-5-9-5-9 5 9 5z" /><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222 4 2.222V20M12 12L8 9.778 12 7.556 16 9.778 12 12z" /></svg>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-800">Peningkatan Literasi Digital</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">Meningkatkan kapasitas SDM lokal dan mendorong inklusi sosial.</p>
+                        <div class="bg-green-50 text-green-800 font-bold p-3 rounded-lg text-center">80% masyarakat melek digital pada 2029</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pilar Program Kunci Section -->
+        <section id="program" class="py-20 px-6 bg-white fade-in">
+            <div class="container mx-auto">
+                <h3 class="section-title">Pilar Program dan Implementasi Kunci</h3>
+                <p class="section-subtitle">Lima pilar utama untuk mewujudkan transformasi digital yang terstruktur dan berdampak.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="p-6 border border-gray-200 rounded-lg">
+                        <h4 class="font-bold text-lg text-gray-800 mb-2">Portal Super-Apps "KUPANG DIGITAL"</h4>
+                        <p class="text-gray-600">Satu aplikasi untuk semua layanan publik dengan sistem Single Sign-On (SSO) untuk kemudahan akses masyarakat.</p>
+                    </div>
+                     <div class="p-6 border border-gray-200 rounded-lg">
+                        <h4 class="font-bold text-lg text-gray-800 mb-2">Kolaborasi Multipihak</h4>
+                        <p class="text-gray-600">Sinergi dengan pemerintah pusat (BAKTI), swasta (KPBU), dan akademisi untuk percepatan pembangunan.</p>
+                    </div>
+                     <div class="p-6 border border-gray-200 rounded-lg">
+                        <h4 class="font-bold text-lg text-gray-800 mb-2">Pengembangan Smart Region</h4>
+                        <p class="text-gray-600">Implementasi Command Center, Telemedicine, dan digitalisasi 5.000 UMKM untuk ekonomi dan kualitas hidup cerdas.</p>
+                    </div>
+                     <div class="p-6 border border-gray-200 rounded-lg">
+                        <h4 class="font-bold text-lg text-gray-800 mb-2">Fondasi SPBE yang Kokoh</h4>
+                        <p class="text-gray-600">Penyusunan Arsitektur SPBE untuk mengintegrasikan sistem, data, dan proses bisnis pemerintah secara menyeluruh.</p>
+                    </div>
+                     <div class="p-6 border border-gray-200 rounded-lg">
+                        <h4 class="font-bold text-lg text-gray-800 mb-2">War Room Anti Hoaks</h4>
+                        <p class="text-gray-600">Sistem respons cepat untuk verifikasi dan klarifikasi informasi, memastikan ruang digital yang sehat dan terpercaya.</p>
+                    </div>
+                    <div class="p-6 border border-gray-200 rounded-lg">
+                        <h4 class="font-bold text-lg text-gray-800 mb-2">Kupang Digital Hub</h4>
+                        <p class="text-gray-600">Inkubator untuk startup lokal dan pusat pemberdayaan ekonomi digital, menargetkan 1.000 lapangan kerja baru.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dampak Jangka Panjang Section -->
+        <section id="dampak" class="py-20 px-6 bg-blue-600 text-white fade-in">
+            <div class="container mx-auto">
+                 <h3 class="text-3xl font-bold text-center mb-12">Dampak Jangka Panjang yang Diharapkan</h3>
+                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <p class="text-5xl font-bold">75+</p>
+                        <p class="mt-2 font-semibold opacity-80">Peningkatan Indeks Pembangunan Manusia (IPM)</p>
+                    </div>
+                    <div>
+                        <p class="text-5xl font-bold">18%</p>
+                        <p class="mt-2 font-semibold opacity-80">Penurunan Angka Kemiskinan (dari 28%)</p>
+                    </div>
+                    <div>
+                        <p class="text-5xl font-bold">3.5+</p>
+                        <p class="mt-2 font-semibold opacity-80">Peningkatan Indeks SPBE (Kategori Sangat Baik)</p>
+                    </div>
+                    <div>
+                        <p class="text-5xl font-bold">Top 10</p>
+                        <p class="mt-2 font-semibold opacity-80">Nasional Indeks Smart Region</p>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p class="font-bold text-lg">Mari Bersama Wujudkan Kabupaten Kupang EMAS</p>
+            <p class="mt-2 text-gray-400">melalui Transformasi Digital yang Inklusif dan Berkelanjutan.</p>
+            <p class="mt-6 text-xs text-gray-500">Landing page ini dirangkum dari Makalah Strategi oleh Delsi A. Panie, S.Kom., MM</p>
+        </div>
+    </footer>
+
+    <script>
+        // Script for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileLinks = document.querySelectorAll('#mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Script for fade-in animation on scroll
+        const faders = document.querySelectorAll('.fade-in');
+        const appearOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('visible');
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
